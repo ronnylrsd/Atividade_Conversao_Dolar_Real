@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.tabela {
+  border: 1.5px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.taxa {
+}

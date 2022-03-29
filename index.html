@@ -1,43 +1,50 @@
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Conversão_Ronny</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <script src="main.js"></script>
-    <title>Conversão - Ronny</title>
-    <link rel="stylesheet" href="text/css" href="styles.css">
-</head>
-
-<body>
-    <h2 class="h2">Conversor</h2>
-    <div>
-        <!--Tabela de conversão-->
-        <table>
-            <tr>
-                <td>Taxa de Conversão:</td>
-                <td><input type="text" name="taxaDeConversao" size="5">
-                    <button class="confirmar">CONFIRMAR</button>
-                    <button class="limpar">LIMPAR TAXA</button>
-                    <br />
-                </td>
-            </tr>
-            <tr>
-                <td>Valor em dólar:</td>
-                <td><input type="text" name="valorDolar" size="5">
-                    <button class="converterDolarParaReal">CONVERTER DÓLAR PARA REAL</button>
-                </td>
-                <td>Valor convertido em real:</td>
-                <td><input type="text" name="valorConvertidoEmReal" size="5"><br /></td>
-            </tr>
-            <tr>
-                <td>Valor em real:</td>
-                <td><input type="text" name="valorReal" size="5">
-                    <button class="converterRealParaDolar">CONVERTER REAL PARA DÓLAR</button>
-                </td>
-                <td>Valor convertido em dólar:</td>
-                <td><input type="text" name="valorConvertidoEmDolar" size="5"><br /></td>
-            </tr>
-        </table>
-    </div>
-</body>
-
+  <body>
+    <h2 class="titulo">Conversor</h2>
+    <!--Tabela de conversão-->
+    <table class="tabela">
+      <tr class="taxa">
+        <td>Taxa de Conversão:</td>
+        <td>
+          <input type="number" id="taxaDeConversao" />
+          <button id="confirmar" onclick="confirmTaxa()">CONFIRMAR</button>
+          <button id="limpar" onclick="limparTaxa()">LIMPAR</button>
+          <br />
+        </td>
+      </tr>
+      <tr class="dolar-real">
+        <td>Valor em dólar ($):</td>
+        <td>
+          <input type="number" id="valorDolar" />
+          <button id="converterDolarParaReal" onclick="conveterDR()">
+            CONVERTER DÓLAR PARA REAL
+          </button>
+        </td>
+        <td>Valor convertido em (R$):</td>
+        <td>
+          <input type="number" id="valorConvertidoEmReal" readonly /><br />
+        </td>
+      </tr>
+      <tr class="real-dolar">
+        <td>Valor em real (R$):</td>
+        <td>
+          <input type="number" id="valorReal" />
+          <button id="converterRealParaDolar" onclick="converterRD()">
+            CONVERTER REAL PARA DÓLAR
+          </button>
+        </td>
+        <td>Valor convertido em ($):</td>
+        <td>
+          <input type="number" id="valorConvertidoEmDolar" readonly /><br />
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script src="main.js"></script>
 </html>
