@@ -31,7 +31,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 🚀 Como executar
 
 - Instale o Visual Studio Code
-- Instale o HTML5, CSS3 e JavaScript
 - Clone o repositório
 - Instale a extensão: live server (https://github.com/ritwickdey/vscode-live-server-plus-plus)
 - Clique no Go Live no canto inferior direito do VS Code
